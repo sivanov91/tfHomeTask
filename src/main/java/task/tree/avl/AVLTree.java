@@ -156,6 +156,8 @@ public class AVLTree {
 
     public void printTree() {
         // Заполняем масив билдерами.
+        // TODO Можно реализовать с меньшими затаратами памяти,
+        //  заменив список с билдерами на одну целочисленную переменную. (исправлю чуть позже как появится время)
         ArrayList<StringBuilder> list = new ArrayList<>(root.getHeight() + 1);
         for (int i = 0; i <= root.getHeight(); i++) {
             list.add(new StringBuilder());
